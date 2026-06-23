@@ -1,2 +1,2 @@
 # Quiz
-Random project for fun
+Random project for fun, no offence meant.
