@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    button {
+      font-size: 20px;
+      padding: 15px 30px;
+      margin: 20px;
+      cursor: pointer;
+      color: white; /* <-- this is the change */
+      border: none;
+    }
+    .green {
+      background-color: green;
+    }
+    .red {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>pick green</h1>
+
+  <button class="green" onclick="wrongPage()">red</button>
+  <button class="red" onclick="wrongPage()">green</button>
+
+  <script>
+    function wrongPage() {
+      const w = window.open();
+      w.document.write(`
+        <html>
+          <head>
+            <title>Retard</title>
+            <style>
+              body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-family: Arial;
+                font-size: 80px;
+              }
+            </style>
+          </head>
+          <body>
+            Retard
+          </body>
+        </html>
+      `);
+      w.document.close();
+    }
+  </script>
+
+</body>
+</html>
