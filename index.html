@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Quiz</title>
+  <title>Quiz by Louay</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -16,7 +16,7 @@
       padding: 15px 30px;
       margin: 20px;
       cursor: pointer;
-      color: white; /* <-- this is the change */
+      color: white;
       border: none;
     }
     .green {
@@ -31,16 +31,16 @@
 
   <h1>pick green</h1>
 
-  <button class="green" onclick="wrongPage()">red</button>
-  <button class="red" onclick="wrongPage()">green</button>
+  <button class="green" onclick="page()">red</button>
+  <button class="red" onclick="page()">green</button>
 
   <script>
-    function wrongPage() {
+    function page() {
       const w = window.open();
       w.document.write(`
         <html>
           <head>
-            <title>Retard</title>
+            <title>dumbass</title>
             <style>
               body {
                 display: flex;
@@ -53,7 +53,7 @@
             </style>
           </head>
           <body>
-            Retard
+            dumbass
           </body>
         </html>
       `);
